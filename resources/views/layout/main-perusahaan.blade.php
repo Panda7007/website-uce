@@ -5,10 +5,9 @@
     <meta charset="utf-8">
     <meta name="keywords" content="Sample Long Headline To Change With Your Text">
     <meta name="description" content="">
-    <link href='images/logooo.png'  rel="shortcut icon">
     <title>UCE - {{$title}} </title>
     <link rel="stylesheet" href="super.css" media="screen">
-<link rel="stylesheet" href="Home.css" media="screen">
+<link rel="stylesheet" href="Detail.css" media="screen">
     <script class="u-script" type="text/javascript" src="jquery.js" "="" defer=""></script>
     <script class="u-script" type="text/javascript" src="super.js" "="" defer=""></script>
     <meta name="generator" content="Nicepage 4.15.8, nicepage.com">

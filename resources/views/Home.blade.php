@@ -365,32 +365,21 @@ c6.177,6.18,9.262,14.271,9.262,22.366C354.708,234.018,351.617,242.115,345.441,24
         <h1 class="u-custom-font u-font-source-sans-pro u-text u-text-default-lg u-text-default-md u-text-default-sm u-text-default-xs u-text-white u-title u-text-1">Perusa​haan &amp; Yayasan</h1>
         <div class="u-expanded-width-sm u-expanded-width-xs u-list u-list-1">
           <div class="u-repeater u-repeater-1">
+
+
+
+
+              	
+            @foreach ($mentor as $item)
             <div class="u-container-style u-list-item u-radius-19 u-repeater-item u-shape-round u-white u-list-item-1" data-animation-name="customAnimationIn" data-animation-duration="1500" data-animation-direction="">
               <div class="u-container-layout u-similar-container u-container-layout-1">
-
-
-              <div class="MultiCarousel-inner">
-                  @foreach ($mentor as $item)
-                  <a href="/pembimbing/{{$item->id}}" class="item">
-                    <div class="position-relative d-flex text-white">
-                      <div class="filter filter-dark">
-                        <img src="@if($item->gambar != null) /storage/{{$item->gambar}} @else https://img.freepik.com/free-photo/portrait-young-asia-lady-with-positive-expression-arms-crossed-smile-broadly-dressed-casual-clothing-looking-camera-pink-background_7861-3201.jpg?t=st=1656720589~exp=1656721189~hmac=b5a386e7f63952a0c7f3cda3f92d9903eb5f1844085dc84f772b032e3669e41d&w=1380 @endif" alt="">
-                      </div>
-                      <div class="position-absolute text-center" style="left: 50%; bottom: 0; transform: translate(-50%, 0);">
-                        <h4><strong>{{$item->nama}}</strong></h4>
-                        <p>{{$item->bidang}}</p>
-                      </div>
-                    </div>
-                  </a>
-                  @endforeach
-              </div>
-              	
-                <h4 class="u-align-center u-custom-font u-font-open-sans u-text u-text-default-xl u-text-palette-3-dark-2 u-text-2">PT Konami</h4>
-                <img class="u-align-center-xs u-image u-image-round u-radius-12 u-image-1" src="images/1e8dec7ab41132edc8aaff26c3102dcabb27e896e3071ef7f28231560c6b984041c0435f14b89372986ee4fc93cfe4ac48c0776064e5e5f9f96790_1280.jpg" alt="" data-image-width="1280" data-image-height="853">
-                <p class="u-align-justify u-custom-font u-font-arial u-small-text u-text u-text-variant u-text-3">Sample small text. Lorem ipsum dolor sit amet.</p>
-                <a href="#" class="u-border-none u-btn u-btn-round u-button-style u-gradient u-none u-radius-8 u-text-grey-5 u-btn-1">INFO</a>
+                <h4 class="u-align-center u-custom-font u-font-open-sans u-text u-text-default-xl u-text-palette-3-dark-2 u-text-2">{{$item->nama}}</h4>
+                <img class="u-align-center-xs u-image u-image-round u-radius-12 u-image-1" src="@if($item->gambar != null) /storage/{{$item->gambar}} @else https://img.freepik.com/free-photo/portrait-young-asia-lady-with-positive-expression-arms-crossed-smile-broadly-dressed-casual-clothing-looking-camera-pink-background_7861-3201.jpg?t=st=1656720589~exp=1656721189~hmac=b5a386e7f63952a0c7f3cda3f92d9903eb5f1844085dc84f772b032e3669e41d&w=1380 @endif" alt="" data-image-width="1280" data-image-height="853">
+                <p class="u-align-justify u-custom-font u-font-arial u-small-text u-text u-text-variant u-text-3">{{$item->bidang}}</p>
+                <a href="/perusahaan/{{$item->id}}" class="u-border-none u-btn u-btn-round u-button-style u-gradient u-none u-radius-8 u-text-grey-5 u-btn-1">INFO</a>
               </div>
             </div>
+       			@endforeach
             <div class="u-container-style u-list-item u-radius-19 u-repeater-item u-shape-round u-white u-list-item-2" data-animation-name="customAnimationIn" data-animation-duration="1500" data-animation-direction="">
               <div class="u-container-layout u-similar-container u-container-layout-2">
                 <h4 class="u-align-center u-custom-font u-font-open-sans u-text u-text-default-xl u-text-palette-3-dark-2 u-text-4">Sample Headline</h4>
@@ -399,6 +388,7 @@ c6.177,6.18,9.262,14.271,9.262,22.366C354.708,234.018,351.617,242.115,345.441,24
                 <a href="#" class="u-border-none u-btn u-btn-round u-button-style u-gradient u-none u-radius-8 u-text-grey-5 u-btn-2">INFO</a>
               </div>
             </div>
+
             <div class="u-container-style u-list-item u-radius-19 u-repeater-item u-shape-round u-white u-list-item-3" data-animation-name="customAnimationIn" data-animation-duration="1500" data-animation-direction="">
               <div class="u-container-layout u-similar-container u-container-layout-3">
                 <h4 class="u-align-center u-custom-font u-font-open-sans u-text u-text-default-xl u-text-palette-3-dark-2 u-text-6">Sample Headline</h4>
