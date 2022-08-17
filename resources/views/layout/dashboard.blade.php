@@ -60,7 +60,7 @@
                 <li class="@if($title == "Mentor") active @endif">
                     <a href="/mentor">
                         <i class="now-ui-icons users_single-02"></i>
-                    <p>Mentor</p>
+                    <p>Perusahaan</p>
                     </a>
                 </li>
                 <li class="@if($title == "Media") active @endif">
