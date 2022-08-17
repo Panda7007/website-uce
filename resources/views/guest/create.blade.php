@@ -1,11 +1,11 @@
 @extends("layout.dashboard")
 
 @section("main")
-    <form action="/mentor" method="post">
+    <form action="/guess" method="post">
         @csrf
         <div class="form-group">
-            <label for="namaMentor">Nama</label>
-            <input type="text" class="form-control" required name="nama" id="namaMentor" placeholder="ex : Rahman Surahman">
+            <label for="namaguess">Nama</label>
+            <input type="text" class="form-control" required name="nama" id="namaguess" placeholder="ex : Rahman Surahman">
             <small class="form-text text-muted"><span class="text-danger">*</span>wajib</small>
         </div>
         <div class="form-group">
@@ -16,12 +16,6 @@
             <div class="error text-danger">{{ $message }}</div>
             @enderror
         </div>
-        <div class="form-group">
-            <label for="deskripsi">Informasi</label>
-            <input id="x" type="hidden" required name="deskripsi_singkat">
-            <trix-editor input="x"></trix-editor>
-            <small class="form-text text-muted"><span class="text-danger">*</span>wajib</small>
-        </div>
-        <button type="submit" class="btn btn-success">Tambah Perusahaan</button>
+        <button type="submit" class="btn btn-success">Tambah Guest</button>
     </form>
 @endsection

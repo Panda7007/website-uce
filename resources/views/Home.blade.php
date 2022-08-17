@@ -374,37 +374,12 @@ c6.177,6.18,9.262,14.271,9.262,22.366C354.708,234.018,351.617,242.115,345.441,24
             <div class="u-container-style u-list-item u-radius-19 u-repeater-item u-shape-round u-white u-list-item-1" data-animation-name="customAnimationIn" data-animation-duration="1500" data-animation-direction="">
               <div class="u-container-layout u-similar-container u-container-layout-1">
                 <h4 class="u-align-center u-custom-font u-font-open-sans u-text u-text-default-xl u-text-palette-3-dark-2 u-text-2">{{$item->nama}}</h4>
-                <img class="u-align-center-xs u-image u-image-round u-radius-12 u-image-1" src="@if($item->gambar != null) /storage/{{$item->gambar}} @else https://img.freepik.com/free-photo/portrait-young-asia-lady-with-positive-expression-arms-crossed-smile-broadly-dressed-casual-clothing-looking-camera-pink-background_7861-3201.jpg?t=st=1656720589~exp=1656721189~hmac=b5a386e7f63952a0c7f3cda3f92d9903eb5f1844085dc84f772b032e3669e41d&w=1380 @endif" alt="" data-image-width="1280" data-image-height="853">
+                <img class="u-align-center-xs u-image u-image-round u-radius-12 u-image-1" src="{{$item->gambar}}" alt="" data-image-width="1280" data-image-height="853">
                 <p class="u-align-justify u-custom-font u-font-arial u-small-text u-text u-text-variant u-text-3">{{$item->bidang}}</p>
                 <a href="/perusahaan/{{$item->id}}" class="u-border-none u-btn u-btn-round u-button-style u-gradient u-none u-radius-8 u-text-grey-5 u-btn-1">INFO</a>
               </div>
             </div>
        			@endforeach
-            <div class="u-container-style u-list-item u-radius-19 u-repeater-item u-shape-round u-white u-list-item-2" data-animation-name="customAnimationIn" data-animation-duration="1500" data-animation-direction="">
-              <div class="u-container-layout u-similar-container u-container-layout-2">
-                <h4 class="u-align-center u-custom-font u-font-open-sans u-text u-text-default-xl u-text-palette-3-dark-2 u-text-4">Sample Headline</h4>
-                <img class="u-align-center-xs u-image u-image-round u-radius-12 u-image-2" src="images/1e8dec7ab41132edc8aaff26c3102dcabb27e896e3071ef7f28231560c6b984041c0435f14b89372986ee4fc93cfe4ac48c0776064e5e5f9f96790_1280.jpg" alt="" data-image-width="1280" data-image-height="853">
-                <p class="u-align-justify u-custom-font u-font-arial u-small-text u-text u-text-variant u-text-5">Sample small text. Lorem ipsum dolor sit amet.</p>
-                <a href="#" class="u-border-none u-btn u-btn-round u-button-style u-gradient u-none u-radius-8 u-text-grey-5 u-btn-2">INFO</a>
-              </div>
-            </div>
-
-            <div class="u-container-style u-list-item u-radius-19 u-repeater-item u-shape-round u-white u-list-item-3" data-animation-name="customAnimationIn" data-animation-duration="1500" data-animation-direction="">
-              <div class="u-container-layout u-similar-container u-container-layout-3">
-                <h4 class="u-align-center u-custom-font u-font-open-sans u-text u-text-default-xl u-text-palette-3-dark-2 u-text-6">Sample Headline</h4>
-                <img class="u-align-center-xs u-image u-image-round u-radius-12 u-image-3" src="images/1e8dec7ab41132edc8aaff26c3102dcabb27e896e3071ef7f28231560c6b984041c0435f14b89372986ee4fc93cfe4ac48c0776064e5e5f9f96790_1280.jpg" alt="" data-image-width="1280" data-image-height="853">
-                <p class="u-align-justify u-custom-font u-font-arial u-small-text u-text u-text-variant u-text-7">Sample small text. Lorem ipsum dolor sit amet.</p>
-                <a href="#" class="u-border-none u-btn u-btn-round u-button-style u-gradient u-none u-radius-8 u-text-grey-5 u-btn-3">INFO</a>
-              </div>
-            </div>
-            <div class="u-container-style u-list-item u-radius-19 u-repeater-item u-shape-round u-white u-list-item-4" data-animation-name="customAnimationIn" data-animation-duration="1500" data-animation-direction="">
-              <div class="u-container-layout u-similar-container u-container-layout-4">
-                <h4 class="u-align-center u-custom-font u-font-open-sans u-text u-text-default-xl u-text-palette-3-dark-2 u-text-8">Sample Headline</h4>
-                <img class="u-align-center-xs u-image u-image-round u-radius-12 u-image-4" src="images/1e8dec7ab41132edc8aaff26c3102dcabb27e896e3071ef7f28231560c6b984041c0435f14b89372986ee4fc93cfe4ac48c0776064e5e5f9f96790_1280.jpg" alt="" data-image-width="1280" data-image-height="853">
-                <p class="u-align-justify u-custom-font u-font-arial u-small-text u-text u-text-variant u-text-9">Sample small text. Lorem ipsum dolor sit amet.</p>
-                <a href="https://nicepage.com/website-builder" class="u-border-none u-btn u-btn-round u-button-style u-gradient u-none u-radius-8 u-text-grey-5 u-btn-4">INFO</a>
-              </div>
-            </div>
           </div>
         </div>
       </div>
@@ -414,36 +389,14 @@ c6.177,6.18,9.262,14.271,9.262,22.366C354.708,234.018,351.617,242.115,345.441,24
         <h1 class="u-text u-text-default u-text-palette-1-dark-1 u-title u-text-1">Media Partner</h1>
         <div class="u-expanded-width-lg u-expanded-width-md u-expanded-width-sm u-expanded-width-xs u-layout-horizontal u-list u-list-1">
           <div class="u-repeater u-repeater-1">
+            @foreach($media as $item)
             <div class="u-container-style u-list-item u-repeater-item">
               <div class="u-container-layout u-similar-container u-container-layout-1">
-                <img class="u-image u-image-default u-image-1" src="images/pamfletpeserta4.jpg" alt="" data-image-width="1920" data-image-height="1912" data-animation-name="customAnimationIn" data-animation-duration="1000">
-                <h6 class="u-text u-text-default u-text-2" data-animation-name="customAnimationIn" data-animation-duration="1000">Sample Headline</h6>
+                <img class="u-image u-image-default u-image-1" src="{{$item->gambar}}" alt="" data-image-width="1920" data-image-height="1912" data-animation-name="customAnimationIn" data-animation-duration="1000">
+                <h6 class="u-text u-text-default u-text-2" data-animation-name="customAnimationIn" data-animation-duration="1000">{{$item->nama_media}}</h6>
               </div>
             </div>
-            <div class="u-container-style u-list-item u-repeater-item">
-              <div class="u-container-layout u-similar-container u-container-layout-2">
-                <img class="u-image u-image-default u-image-2" src="images/pamfletpeserta4.jpg" alt="" data-image-width="1920" data-image-height="1912" data-animation-name="customAnimationIn" data-animation-duration="1000">
-                <h6 class="u-text u-text-default u-text-3" data-animation-name="customAnimationIn" data-animation-duration="1000">Sample Headline</h6>
-              </div>
-            </div>
-            <div class="u-container-style u-list-item u-repeater-item">
-              <div class="u-container-layout u-similar-container u-container-layout-3">
-                <img class="u-image u-image-default u-image-3" src="images/pamfletpeserta4.jpg" alt="" data-image-width="1920" data-image-height="1912" data-animation-name="customAnimationIn" data-animation-duration="1000">
-                <h6 class="u-text u-text-default u-text-4" data-animation-name="customAnimationIn" data-animation-duration="1000">Sample Headline</h6>
-              </div>
-            </div>
-            <div class="u-container-style u-list-item u-repeater-item">
-              <div class="u-container-layout u-similar-container u-container-layout-4">
-                <img class="u-image u-image-default u-image-4" src="images/pamfletpeserta4.jpg" alt="" data-image-width="1920" data-image-height="1912" data-animation-name="customAnimationIn" data-animation-duration="1000">
-                <h6 class="u-text u-text-default u-text-5" data-animation-name="customAnimationIn" data-animation-duration="1000">Sample Headline</h6>
-              </div>
-            </div>
-            <div class="u-container-style u-list-item u-repeater-item">
-              <div class="u-container-layout u-similar-container u-container-layout-5">
-                <img class="u-image u-image-default u-image-5" src="images/pamfletpeserta4.jpg" alt="" data-image-width="1920" data-image-height="1912" data-animation-name="customAnimationIn" data-animation-duration="1000">
-                <h6 class="u-text u-text-default u-text-6" data-animation-name="customAnimationIn" data-animation-duration="1000">Sample Headline</h6>
-              </div>
-            </div>
+            @endforeach
           </div>
           <a class="u-absolute-vcenter u-gallery-nav u-gallery-nav-prev u-grey-70 u-icon-circle u-opacity u-opacity-70 u-spacing-10 u-text-white u-gallery-nav-1" href="#" role="button">
             <span aria-hidden="true">

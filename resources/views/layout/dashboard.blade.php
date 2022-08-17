@@ -57,48 +57,24 @@
         </div>
         <div class="sidebar-wrapper" id="sidebar-wrapper">
             <ul class="nav">
-            <li class="@if($title == "Kelas") active @endif">
-                <a href="/kelas">
-                <i class="now-ui-icons design_app"></i>
-                <p>Kelas</p>
-                </a>
-            </li>
-            <li class="@if($title == "Platinum") active @endif">
-                <a href="/platinum">
-                <i class="now-ui-icons education_atom"></i>
-                <p>Platinum</p>
-                </a>
-            </li>
-            <li class="@if($title == "Mentor") active @endif">
-                <a href="/mentor">
-                    <i class="now-ui-icons users_single-02"></i>
-                <p>Mentor</p>
-                </a>
-            </li>
-            <li class="@if($title == "Pertanyaan") active @endif">
-                <a href="/pertanyaan">
-                <i class="now-ui-icons ui-1_bell-53"></i>
-                <p>Pertanyaan</p>
-                </a>
-            </li>
-            <li class="@if($title == "Fasilitas") active @endif">
-                <a href="/fasilitas">
+                <li class="@if($title == "Mentor") active @endif">
+                    <a href="/mentor">
+                        <i class="now-ui-icons users_single-02"></i>
+                    <p>Mentor</p>
+                    </a>
+                </li>
+                <li class="@if($title == "Media") active @endif">
+                    <a href="/media">
+                    <i class="now-ui-icons ui-1_bell-53"></i>
+                    <p>Media Partner</p>
+                    </a>
+                </li>
+                <li class="@if($title == "Guest") active @endif">
+                    <a href="/guess">
                     <i class="fa-solid fa-hand-holding-heart"></i>
-                    <p>Fasilitas</p>
-                </a>
-            </li>
-            <li class="@if($title == "Pembelajaran") active @endif">
-                <a href="/pembelajaran">
-                    <i class="fa-solid fa-graduation-cap"></i>
-                    <p>Pembelajaran</p>
-                </a>
-            </li>
-            <li class="@if($title == "Event") active @endif">
-                <a href="/event">
-                    <i class="fa-solid fa-calendar-check"></i>
-                    <p>Event</p>
-                </a>
-            </li>
+                    <p>Guest Star</p>
+                    </a>
+                </li>
             </ul>
         </div>
         </div>

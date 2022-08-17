@@ -8,7 +8,7 @@
             <div class="u-layout-row">
               <div class="u-container-style u-layout-cell u-size-19-lg u-size-19-xl u-size-20-md u-size-20-sm u-size-20-xs u-layout-cell-1">
                 <div class="u-container-layout u-container-layout-1">
-                  <img class="u-image u-image-contain u-image-default u-image-1" src="/storage/{{$mentor->gambar}}" alt="" data-image-width="1920" data-image-height="1912">
+                  <img class="u-image u-image-contain u-image-default u-image-1" src="{{$mentor->gambar}}" alt="" data-image-width="1920" data-image-height="1912">
                   <h4 class="u-custom-font u-font-lato u-text u-text-default u-text-1">{{$mentor->nama}}</h4>
                   <h6 class="u-text u-text-default u-text-2">{{$mentor->bidang}}</h6>
                 </div>

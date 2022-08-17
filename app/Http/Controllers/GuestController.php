@@ -2,12 +2,10 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\Mentor;
+use App\Models\Guest;
 use Illuminate\Http\Request;
-use App\Http\Controllers\Controller;
-use Illuminate\Support\Facades\Storage;
 
-class MentorController extends Controller
+class GuestController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -16,9 +14,9 @@ class MentorController extends Controller
      */
     public function index()
     {
-        return view("mentor.index", [
-            "title" => "Mentor",
-            "mentor" => Mentor::paginate(10)
+        return view("guest.index", [
+            "title" => "Guest",
+            "guess" => Guest::paginate(10)
         ]);
     }
 
@@ -29,8 +27,8 @@ class MentorController extends Controller
      */
     public function create()
     {
-        return view("mentor.create", [
-            "title" => "Mentor"
+        return view("guest.create", [
+            "title" => "Guest"
         ]);
     }
 
@@ -42,21 +40,20 @@ class MentorController extends Controller
      */
     public function store(Request $request)
     {
-        Mentor::create([
+        Guest::create([
             "nama" => $request->nama,
-            "gambar" => "https://drive.google.com/uc?export=view&id=" . explode("/", $request->gambar)[5],
-            "deskripsi_singkat" => $request->deskripsi_singkat
+            "gambar" => "https://drive.google.com/uc?export=view&id=" . explode("/", $request->gambar)[5]
         ]);
-        return redirect("/mentor");
+        return redirect("/guess");
     }
 
     /**
      * Display the specified resource.
      *
-     * @param  \App\Models\Mentor  $mentor
+     * @param  \App\Models\Guest  $guest
      * @return \Illuminate\Http\Response
      */
-    public function show(Mentor $mentor)
+    public function show(Guest $guest)
     {
         //
     }
@@ -64,14 +61,14 @@ class MentorController extends Controller
     /**
      * Show the form for editing the specified resource.
      *
-     * @param  \App\Models\Mentor  $mentor
+     * @param  \App\Models\Guest  $guest
      * @return \Illuminate\Http\Response
      */
-    public function edit(Mentor $mentor)
+    public function edit(Guest $guest)
     {
-        return view("mentor.edit", [
-            "title" => "Mentor",
-            "mentor" => $mentor
+        return view("guest.edit", [
+            "title" => "Guest",
+            "guess" => $guest
         ]);
     }
 
@@ -79,33 +76,32 @@ class MentorController extends Controller
      * Update the specified resource in storage.
      *
      * @param  \Illuminate\Http\Request  $request
-     * @param  \App\Models\Mentor  $mentor
+     * @param  \App\Models\Guest  $guest
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, Mentor $mentor)
+    public function update(Request $request, Guest $guest)
     {
-        if ($request->gambar == $mentor->gambar) {
+        if ($request->gambar == $guest->gambar) {
             $gambar = $request->gambar;
         } else {
             $gambar = "https://drive.google.com/uc?export=view&id=" . explode("/", $request->gambar)[5];
         }
-        $mentor->update([
+        $guest->update([
             "nama" => $request->nama,
-            "gambar" => $gambar,
-            "deskripsi_singkat" => $request->deskripsi_singkat
+            "gambar" => $gambar
         ]);
-        return redirect("/mentor");
+        return redirect("/guess");
     }
 
     /**
      * Remove the specified resource from storage.
      *
-     * @param  \App\Models\Mentor  $mentor
+     * @param  \App\Models\Guest  $guest
      * @return \Illuminate\Http\Response
      */
-    public function destroy(Mentor $mentor)
+    public function destroy(Guest $guest)
     {
-        Mentor::destroy($mentor->id);
-        return redirect("/mentor");
+        $guest->delete();
+        return redirect("/guess");
     }
 }
