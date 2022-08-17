@@ -1,7 +1,6 @@
 <?php
  
 namespace App\Http\Controllers;
-use App\Models\Guest;
 use App\Models\Media;
 use App\Models\Mentor;
 use Illuminate\Http\Request;
@@ -13,7 +12,6 @@ class HomeController extends Controller
     	return view('Home',[
             "mentor" => Mentor::get(),
             "media" => Media::get(),
-            "guess" => Guest::get(),
             "title" => "Home"
         ]);
     }
