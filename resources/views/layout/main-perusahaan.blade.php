@@ -6,31 +6,20 @@
     <meta name="keywords" content="Sample Long Headline To Change With Your Text">
     <meta name="description" content="">
     <title>UCE - {{$title}} </title>
-    <link rel="stylesheet" href="super.css" media="screen">
-<link rel="stylesheet" href="Detail.css" media="screen">
+    <link rel="stylesheet" href="/super.css" media="screen">
+    <link rel="stylesheet" href="/Detail.css" media="screen">
     <script class="u-script" type="text/javascript" src="jquery.js" "="" defer=""></script>
     <script class="u-script" type="text/javascript" src="super.js" "="" defer=""></script>
     <meta name="generator" content="Nicepage 4.15.8, nicepage.com">
     <link id="u-theme-google-font" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i|Open+Sans:300,300i,400,400i,500,500i,600,600i,700,700i,800,800i">
     <link id="u-page-google-font" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Oswald:200,300,400,500,600,700|Lato:100,100i,300,300i,400,400i,700,700i,900,900i|Open+Sans:300,300i,400,400i,500,500i,600,600i,700,700i,800,800i|Source+Sans+Pro:200,200i,300,300i,400,400i,600,600i,700,700i,900,900i|Lobster:400">
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
     <script type="application/ld+json">{
 		"@context": "http://schema.org",
 		"@type": "Organization",
 		"name": "",
 		"logo": "images/logoouce22true.png"
-}</script>
+  }
+  </script>
     <meta name="theme-color" content="#478ac9">
     <meta property="og:title" content="Home">
     <meta property="og:type" content="website">
@@ -100,8 +89,8 @@
                 <div class="u-black u-menu-overlay u-opacity u-opacity-50"></div>
               </div>
             </nav>
-            <a href="#" class="u-align-left-xs u-image u-logo u-image-1" data-image-width="945" data-image-height="236">
-              <img src="images/logoouce22true.png" class="u-logo-image u-logo-image-1">
+            <a href="/" class="u-align-left-xs u-image u-logo u-image-1" data-image-width="945" data-image-height="236">
+              <img src="/images/logoouce22true.png" class="u-logo-image u-logo-image-1">
             </a>
           </div>
         </div>

@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta name="keywords" content="Sample Long Headline To Change With Your Text">
     <meta name="description" content="">
-    <link href='images/logooo.png'  rel="shortcut icon">
+    <link href='/images/logooo.png'  rel="shortcut icon">
     <title>UCE - {{$title}} </title>
     <link rel="stylesheet" href="super.css" media="screen">
 <link rel="stylesheet" href="Home.css" media="screen">
@@ -102,7 +102,7 @@
               </div>
             </nav>
             <a href="#" class="u-align-left-xs u-image u-logo u-image-1" data-image-width="945" data-image-height="236">
-              <img src="images/logoouce22true.png" class="u-logo-image u-logo-image-1">
+              <img src="/images/logoouce22true.png" class="u-logo-image u-logo-image-1">
             </a>
           </div>
         </div>
